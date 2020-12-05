@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="blog-uid" content="317198">
+<meta name="blog-name" content="奶咖の小窝">
+<meta name="current-user" content="253765">
+<title>普及组初赛通过指南 - 奶咖の小窝 - 洛谷博客</title>
+<link rel="stylesheet" href="/static/blog/ant/katex.css">
+<link rel="stylesheet" href="/static/blog/ant/common.css">
+</head>
+<body>
+<main>
+<div id="article-comments">
+<div class="ant-col-24">
+<div class="ant-row-flex ant-row-flex-center" style="background: rgb(236, 236, 236); padding: 30px;">
+<div class="ant-col-8" style="">
+<div class="ant-card ant-card-bordered" style="width: 100%;background: rgb(236, 236, 236); ">
+<div class="ant-card-body" style="padding: 0 16px;">
+</div>
+</div>
+</div>
+<div class="ant-col-16">
+<div class="ant-card ant-card-bordered">
+<div class="ant-card-body">
+<div id="article-content">
+<p>大家好呀，本博文是为了要冲pj1=的奆老们写的，很多奆老OI水平很高，但是普及组初赛会考一些其他的知识，而且这些知识零零散散的，让我们来整理一下。</p>
+<p>这篇博文只是列举了知识点，如果要练习的话，按照下面的顺序：</p>
+<ol>
+<li>从2019年CSPJ开始倒序刷题</li>
+<li>如果嫌题不够，可以去刷信息学奥赛一本通--初赛篇</li>
+<li>初赛不计入最后的算分和评分之内，所以初赛包过就行，最重要的还是复赛刷题。</li>
+</ol>
+<p><del>如果完全背下来了这篇文章，至少初赛通过是没问题的（狗头</del></p>
+<ul>
+<li>计算机常识</li>
+</ul>
+<p>IT : Information Technology 信息技术</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">代别</th>
+<th style="text-align: right;">年代</th>
+<th style="text-align: right;">逻辑（电子）原件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">第一代</td>
+<td style="text-align: right;">$1946~1958$</td>
+<td style="text-align: right;">电子管</td>
+</tr>
+<tr>
+<td style="text-align: right;">第二代</td>
+<td style="text-align: right;">$1959~1964$</td>
+<td style="text-align: right;">晶体管</td>
+</tr>
+<tr>
+<td style="text-align: right;">第三代</td>
+<td style="text-align: right;">$1965~1970$</td>
+<td style="text-align: right;">集成电路</td>
+</tr>
+<tr>
+<td style="text-align: right;">第四代</td>
+<td style="text-align: right;">$1971~$至今</td>
+<td style="text-align: right;">大规模、超大规模集成电路</td>
+</tr>
+</tbody>
+</table>
+<p>根据性能指标来分类，可以将计算机分成：巨型机、大型机、中型机、小型机、微型机和工作站</p>
+<p>巨型机：超级计算机，运算快，容量大，主要用于顶尖科研领域（银河、顶点（美）、山脊（美）、神威•天湖之光、天河二）</p>
+<p>大、中型机：国家级科研机构、中点院校使用。</p>
+<p>小型机：一般科研机构、学校使用</p>
+<p>微型机：家用计算机（PC机、个人计算机）运用最为广泛，70年代之后开始普及。</p>
+<p>工作站：性能更高的微型机，主要用于图形、图像处理、计算机辅助设计。</p>
+<p>计算机应用：</p>
+<p>计算机拥有快速性、通用性、准确性和逻辑性等特点。</p>
+<ol>
+<li>
+<p>科学计算：在科研、工程等领域完成大量复杂的计算。计算机的基本应用</p>
+</li>
+<li>
+<p>信息处理：对数据进行收集、存储、整理、分类、统计、加工、利用、传播等活动。计算机主要应用</p>
+</li>
+<li>
+<p>自动控制：利用计算机及时采集、检测数据，按照最优值迅速控制对象进行自动调节、自动控制。</p>
+</li>
+<li>
+<p>计算机辅助技术：利用计算机帮助人们设计、处理</p>
+</li>
+<li>
+<p>人工智能：利用计算机模拟人类的智能活动</p>
+</li>
+<li>
+<p>网络应用：利用计算机进行网络相关活动</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>关于空间转换</p>
+<p>$8Bit = 1B$ （字节）</p>
+<p>$1024B = 1KB$</p>
+<p>$1024KB = 1MB$</p>
+<p>$1024MB = 1GB$</p>
+<p>$1024GB = 1TB$</p>
+</li>
+</ul>
+<p>这点要记牢，基本每年都会考，没啥好说的，背就是了。</p>
+<ul>
+<li>关于计算机的一些事儿</li>
+</ul>
+<p>第一台计算机：ENIAC</p>
+<p>第一位程序猿：Ada Lovelace</p>
+<p>艾伦•图灵（英），是计算机科学之父，冯•诺依曼（美籍匈牙利），是计算机之父，千万要记牢，考场上不能忘。有一项以图灵命名的奖项：图灵奖，这是计算机领域最高的奖项。</p>
+<p>提出存储程序控制原理的人是冯诺依曼</p>
+<ul>
+<li>关于硬件</li>
+</ul>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/kx2k3ttz.png" alt="" /></p>
+<p>计算机构成：运算器、控制器、存储器、输入设备、输出设备</p>
+<p>CPU由运算器（算数、逻辑运算）、控制器（指挥系统）和一些寄存器构成。</p>
+<p>CPU为微型计算机的核心部件。</p>
+<p>存储器：保存各类程序的数据信息，包括主存储器（内存储器）和辅助存储器</p>
+<p>主存储器（内存储器）：简称内存，和CPU一起构成的部分可以被CPU直接访问。</p>
+<p>RAM：内容根据需要随时输入输出，也可以随时重新写入，但是一旦停电，RAM里的信息会全部丢失</p>
+<p>ROM：只能读出而不能写入和修改，断电后信息不会消失</p>
+<p>CPU历史：出现于 20 世纪 70 年代，字长 4-8-16-32-644−8−16−32−64 位。</p>
+<p>$CPU$ 主要性能指标是：1、主频；2、外频；3、前端总线FSB频率；4、CPU的位和字长；5、倍频系数；6、缓存；7、超线程；8、制程技术。</p>
+<p>CPU访问速度：寄存器&gt;高速缓存&gt;内存&gt;外存</p>
+<p>断电后保留数据于 ROM和外存</p>
+<p>这一点有可能考，哪个不是CPU的主要性能指标，全都记住就是啦。</p>
+<ul>
+<li>
+<p>计算机语言</p>
+<p>机器语言：计算机最早的语言，计算机能直接识别的语言。用二进制数来编写，所以又被成为二进制语言。优点：速度快。缺点：难度大</p>
+<p>汇编语言：开始用符号代替二进制数，比机器语言简单。但是计算机不能直接识别，需要特殊软件进行翻译。汇编语言仍属于低级语言，依旧难写，现在已经很少被人使用。</p>
+<p>高级语言：现在人们使用的OI语言（Basic、Pascal、PHP、C、C++、C#等）</p>
+<pre><code>1. 编译方式：先将代码交给翻译程序翻译成机器语言，然后连接可执行程序。
+
+2. 解释方式：边扫描边解释，扫描一句解释一句，不再同一翻译。（PHP、Basic、python等）</code></pre>
+<p>编码：计算机除了处理数值数据之外，还要处理符号、图形、图像、声音等数据。由于计算机智能识别0和1，所以需要将这些信息转化为0和1。这一过程就是编码（翻译的意思）。</p>
+<p>数据：能被计算机接收并处理的符号的集合被称为数据。</p>
+<p>比特：一个二进制数，计算机表示信息的数据编码中的最小单位。</p>
+<p>字节：八个比特构成一个字节。存储系统中的最小单位。</p>
+</li>
+<li>
+<p>关于ASCII</p>
+<p>ACSII码是美国国家交换标准代码。</p>
+<p>一种7位二进制编码（<strong>占用一个字节</strong>），用于表示128个国际通用字符。</p>
+<pre><code>1. 数字'0'~'9'（48~57）
+
+2. 26个英文字母（大写：65~09；小写：97~122）
+
+3. 通用符号如+-*/等32个
+
+4. 控制符号（空格、回车等）</code></pre>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/c5vht2r4.png" alt="" /></p>
+</li>
+<li>
+<p>奇奇怪怪的码</p>
+<p>汉字交换码：使用类似于ACSII码的方式，一级汉字拼音排序，二级汉字部首排序。</p>
+<p>字形存储码：使用点阵来表示汉字图形（ $16*16*24*24$）</p>
+</li>
+<li>
+<p>病毒</p>
+<p>计算机病毒（主要针对软件系统）</p>
+<p>在计算机运行过程中，能把自身精确拷贝到或有修改的拷贝到其他程序体内的程序。</p>
+<p>特征：</p>
+<pre><code>隐蔽性、潜伏性、传播性、激发性、破坏性、危害性。</code></pre>
+<p>传播方式：网络和硬盘</p>
+</li>
+<li>
+<p>机器数与真值</p>
+<p>在计算机中，表示数值的符号只有0和1，我们规定最高位为符号位，并用0表示正号，1表示负号，这样，计算机中的数值和符号就都全“数码化”。</p>
+<p>例如：-0000001 -&gt; 10000001
+01010101 -&gt; 101010101</p>
+<p>为了简化机器中数据的运算字符，人们采用原码、反码和补码等方法对数值和数字同一编码。</p>
+<p>原码：直接用符号和真值表示。</p>
+<p>例如：x=01010101， $[x]_{yuan}$ = 001010101</p>
+<p>反码：正数的反码就是正数本身，负数的反码对符号位以外的数字“求反”（0变1，1变0）</p>
+<p>例如：x=-1100110 $[x]_{fan}$ = 10011001</p>
+<p>补码：正数的补码就是正数本身，负数的补码是符号位为1，数值各取其反，最低位+1</p>
+</li>
+<li>
+<p>关于IP</p>
+</li>
+</ul>
+<ol>
+<li>
+<p>IPv4</p>
+<p>点分十进制，每部分取值 $0 $~ $255$，注意，这里IPv4的结构大概是：</p>
+<p>12.35.185.54</p>
+<p>注意，每个都不能大于255（除了主机ID（第一位）其他都能是0或255），</p>
+</li>
+<li>
+<p>IPv6</p>
+<p>冒号十六进制，共128位二进制。这个是为了防止IPv4不够用了，只需要知道这一点就行了。</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>计算机网络</p>
+<p>利用通信线路和设备，将不同地方的计算机连接起来。</p>
+<p>TCP/IP:用于网络的一组通信协议。</p>
+<p>网络的主要功能：资源共享、信息传输、分布处理、综合信息服务。</p>
+</li>
+<li>
+<p>各种缩写</p>
+<p>前方高能</p>
+<p>这可不是说着玩的，这些都有可能考</p>
+<p>局域网 -- LAN // LAN和MAN一般都由多个LAN构成</p>
+<p>（一种在小范围内实现的计算机网络，一般在1km的范围内，局域网内传输效率极高，误码率低，结构简单容易实现）</p>
+<p>城域网 -- MAN</p>
+<p>（城域网的范围大概在几千米至几十千米内）</p>
+<p>广域网 -- WAN</p>
+<p>（广域网的范围大概几十千米到几千千米以上）</p>
+<ul>
+<li>
+<p>从网络的拓扑来看，域网一共可分为以下五类：</p>
+<p>星形、总线形、环形、树形、网状性（不规则性）</p>
+<p>其中星形结构最为简单容易管理维护，但可靠性较低。</p>
+<p>一般广域网使用网状性。</p>
+</li>
+</ul>
+<p>随机存储器 -- RAM</p>
+<p>只读存储器 -- ROM</p>
+<p>因特网 -- Internet</p>
+<p>万维网 -- WWW</p>
+<p>文件传输协议 -- LFTP</p>
+<p>远程登录 -- Telnet</p>
+<p>超文本标记语言 -- HTML</p>
+<p>超文本传输协议 -- HTTP</p>
+<p>简单邮件传输协议 -- SMTP</p>
+<p>邮局协议第三版 -- POP3</p>
+<p>交互邮件访问协议 -- IMAP</p>
+<p>传输控制协议 -- TCP</p>
+<p>网际协议 -- IP</p>
+<p>域名系统 -- DNS</p>
+<p>统一资源定位器 -- URL</p>
+</li>
+<li>
+<p>关于NOIp</p>
+<p>没错，NOIp会考NOIp的知识（hh</p>
+<p>NOIp，全国青少年信息学奥林匹克联赛（省级），开办于1995年，截止2018已举办24届，2019年暂停，2020年恢复。</p>
+<p>复赛使用C、C++、Pascal，2022年后只能使用C++。</p>
+<p>复赛评测系统：NOI Linux （这里吐槽一下，这个系统超级难用）<a href="https://www.luogu.com.cn/blog/317198/noi-linux-shi-yong-ji-tong-jie-shao">本人写的NOI Linux系统介绍QAQ</a></p>
+<p>NOI，全国青少年计算机程序设计竞赛，开办于1984年，现更名 全国青少年信息学奥林匹克竞赛。</p>
+<p>APIO 亚洲与太平洋地区信息学奥林匹克竞赛</p>
+<p>IOI 国际信息学奥林匹克竞赛</p>
+<p>NOIp &lt; APIO &lt; NOI &lt; IOI</p>
+</li>
+<li>
+<p>计算机软件</p>
+<p>语言分类（从低级——高级排列）：</p>
+<p>机器语言——汇编语言——高级语言。</p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/vob651gw.png" alt="" /></p>
+</li>
+<li>
+<p>集合运算</p>
+<ul>
+<li>
+<p>交 A $\cap$ B</p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/smpwqnfu.png" alt="" /></p>
+<p>若一个元素在集合A中，也在集合B中，就激发条件A $\cap$ B</p>
+</li>
+<li>
+<p>并 A $\cup$ B</p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/6vpc2jue.png" alt="" /></p>
+<p>若一个元素要么在A中，要么在B中，称为A $\cup$ B</p>
+</li>
+<li>
+<p>补 ~A或者 $\overline{A}$</p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/65bk0dds.png" alt="" /></p>
+<p>不在A中，但是在A外面的所有元素都在A的补集中。</p>
+</li>
+<li>
+<p>差</p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/kiun0mp9.png" alt="" /></p>
+<p>在A中而不能在B中，称为A的差集。</p>
+</li>
+<li>
+<p>容斥原理</p>
+<p>对于有限集合S，用 |S| 表示 S 的元素个数</p>
+<p>设A，B为有限集合，则</p>
+<p>$$|A\ \cup B| = |A| + |B| - |A \ \cap B|$$</p>
+<p>设A，B，C为有限集合，则</p>
+<p>$$|A\ \cup B \cup C| = |A| + |B| + |C| - |B \ \cap C| - |A\ \cap B| - |A\ \cap C| + |A\ \cap B\ \cap C|$$</p>
+</li>
+</ul>
+</li>
+<li>
+<p>关于树</p>
+<p>结点的度 = 子结点个数</p>
+<p>度 = 一个点的分叉个数</p>
+<p>一个树的度 = max(所有结点的度)</p>
+<p>总结点数 = 线的数 + 1</p>
+<ul>
+<li>
+<p>特殊的二叉树</p>
+<p>二叉树的定义：每个结点<strong>最多</strong>（注意）有两个结点（两个结点分别为，左子树和右子树）（俗名左儿子和右儿子）</p>
+<p>二叉树的遍历：</p>
+<pre><code>1. 先序遍历：根-&gt;左-&gt;右
+2. 中序遍历：左-&gt;根-&gt;右
+3. 后序遍历：左-&gt;右-&gt;根
+
+这里会考，比如说给出先序遍历和中序遍历，让你求后序遍历</code></pre>
+<ul>
+<li>
+<p>满二叉树</p>
+<p>每个根有两个子树。</p>
+</li>
+<li>
+<p>完全二叉树</p>
+<p>每个根有两个子树，最后一行可以没有子树。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>关于图</p>
+<ul>
+<li>
+<p>基本</p>
+<p>顶点(V) + 边(E) = 图(V, E)</p>
+<p>最基本的图（无向图）：</p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/9thv7dq4.png" alt="" /></p>
+</li>
+<li>
+<p>有向边</p>
+<p>如上图，若只能从A走到C而不能从C走到A，那么这条边为有向边</p>
+</li>
+<li>
+<p>有向图</p>
+<p>define：全部为有向边的图为有向图</p>
+<p>入度：有向图中，以一个顶点为终点的有向边的数目。</p>
+<p>出度：有向图中，以一个顶点为起点的有向边的数目。</p>
+<p>有向图中每个顶点的度等于该顶点的入度与出度之和</p>
+</li>
+<li>
+<p>无向图</p>
+<p>度：无向图中，与一个顶点相连的边的数目。</p>
+</li>
+<li>
+<p>一些概念</p>
+<p>边权：边的价值，一般指边的长度。</p>
+<p>回路/环：起点与终点相同的路径。</p>
+<p>简单图：图中没有重边和自环</p>
+<p>顶点A到顶点B联通（无向）：直接或间接地经过若干条边，使得顶点A通向顶点B。</p>
+<p>顶点A到顶点B联通（有向）：直接或间接地经过若干条边（均为一个方向的有向边），使得顶点A通向顶点B。</p>
+<p>完全图：任意两个顶点之间存在边直达，完全无向图有 $n*(n-1)÷2$条边，有向图有 $(n-1)*n$条边。</p>
+<p>有向图中每个点的度是入度与出度之和。</p>
+<p>连通图：图中任意两个结点都是联通的。</p>
+</li>
+<li>
+<p>遍历方式</p>
+<ul>
+<li>
+<p>广度优先遍历。</p>
+<p>逐步入队相邻的所有未访问过的点。</p>
+</li>
+<li>
+<p>深度优先遍历</p>
+<p>从一个点出发，访问与之所有相连的点。</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>补充：</p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/ewi0sbi5.png" alt="" /></p>
+</li>
+<li>
+<p>链表</p>
+<p>插入删除不需要移动元素，不必事先估计存储空间，所需空间与线性表长度成正比</p>
+<p>不可随机访问任一元素</p>
+</li>
+<li>
+<p>数学问题。</p>
+<p>建议复习，排列组合，进制问题（如进制的转换），方程还有最小公倍数、因数这方面的知识。</p>
+</li>
+<li>
+<p>栈和队列</p>
+<p>这里要熟悉，栈是先进后出，队列是先进先出，这里可能考到如果如栈/队列顺序是什么什么，则出栈/队列是什么什么</p>
+</li>
+<li>
+<p>分辨率</p>
+<p>显示分辨率（屏幕分辨率）是屏幕图像的精密度，是指显示器所能显示的像素的多少。由于屏幕上的点、线和面都是由像素组成的，显示器可显示的像素越多，画面就越精细，同样的屏幕区域内能显示的信息也越多，所以分辨率是个非常重要的性能指标。显示分辨率一定的情况下，显示屏越小图像越清晰，反之，显示屏大小固定时，显示分辨率越高图像越清晰。</p>
+<p>比如说，设一台数码相机中CCD芯片的像素数目为300万，300万就是横着的像素×竖着的像素。</p>
+<p>$x * y == 3000000$ （他的意思就是x*y&lt;=3000000），然后求出x和y（约等于多少，）就行了。</p>
+</li>
+</ul>
+<hr />
+<p>上方都是选择题，初赛还有一种题，就是补全程序。这种题没啥好说的，只要你见过这种算法，你就能拿到分，所以--多刷题吧.</p>
+<p>差不多就写到这里吧，背下来所有的就能至少70分哦~</p>
+<p>最后求个关注+点赞哦，如果有什么不明白的珂以留言或者私信问我，我会看每一条评论哦~</p>
+<p>对于本文出现的学术性问题，本人十分抱歉。如果您发现了其中之一，请在下方留言告诉我。</p>
+<p><del>其实这篇博客的前身是窝上课记得笔记（超小声</del></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> </main>
+<script>
+    var BlogGlobals = {
+      blogName: document.querySelector('meta[name=blog-name]').getAttribute('content'),
+      blogUID: parseInt(document.querySelector('meta[name=blog-uid]').getAttribute('content')),
+      currentUser: parseInt(document.querySelector('meta[name=current-user]').getAttribute('content')),
+      luoguAddress: 'https://www.luogu.com.cn',
+      picAddress: 'https://cdn.luogu.com.cn',
+      blogSubtitle: '脾气暴躁人美声甜小萝莉',
+      isBlogAdmin: false,
+    }
+  </script>
+<script src="/static/blog/ant/common.js"></script>
+<script>
+      var articleInfo = {
+          postID: "258709",
+          userVote: "0",
+          postThumbUp: "40",
+          isBlogAdmin: "",
+          postTitle: "普及组初赛通过指南",
+          postType: "代表作",
+          postTime: "2020-08-08 20:27:36",
+          content:document.getElementById('article-content').innerHTML
+      }
+      BlogGlobals.blogID = "258709";
+      BlogGlobals.vote = "0";
+      BlogGlobals.thumbUp = "40";
+  </script>
+<script src="/static/blog/ant/article.js"></script>
+</body>
+</html>
